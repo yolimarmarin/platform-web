@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const PrimaryButtonMainContainer = styled.button`
-  background-color: ${(props) => (props.active ? props.background : 'transparent')};
+  background-color: ${(props) => (props.background ? props.background : 'transparent')};
   border: none;
   cursor: pointer;
   :active {
@@ -14,11 +14,32 @@ const PrimaryButtonMainContainer = styled.button`
   padding: ${(props) => props.padding};
   width: ${(props) => (props.width ? props.width : '100%')};
   margin: ${(props) => props.margin};
+  height: ${(props) => props.height};
+  border-radius: ${(props) => props.borderRadius};
+  position: ${(props) => props.position};
+  min-width: ${(props) => (props.minWidth ? props.minWidth : 'fit-content')};
 
-  .navbar-icon{
-      width: 25px;
+  .button-text {
+    color: ${(props) => props.color};
   }
-  
+
+  .navbar-icon {
+    width: 25px;
+  }
+
+  .notification-icon {
+    width: 23px;
+  }
 `;
 
-export { PrimaryButtonMainContainer };
+const CircularDiv = styled.div`
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background-color: ${(props) => props.background};
+  position:absolute;
+  bottom: 5px;
+  right: 0;
+`;
+
+export { PrimaryButtonMainContainer, CircularDiv };

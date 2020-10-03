@@ -1,25 +1,30 @@
 import styled from 'styled-components';
 
+const headerHeight = '80px';
+const aviableHeight = `calc(100% - ${headerHeight})`
+const navbarWidth = '50px';
+const aviableWidth = `calc(100% - ${navbarWidth})`
+
 const AppTemplateMainContainer = styled.div`
   width: 100vw;
   height: 100vh;
 `;
 const AppTemplateHeaderContainer = styled.div`
   width: 100%;
-  height: 60px;
+  height: ${headerHeight};
 `;
 const AppTemplateContentContainer = styled.div`
   width: 100%;
-  height: calc(100% - 60px);
+  height: ${aviableHeight};
   display: flex;
 `;
 const AppTemplateNavbarContainer = styled.div`
-  width: 50px;
+  width: ${navbarWidth};
   height: 100%;
   background-color: #3d83fe;
 `;
 const AppTemplateChildrenContainer = styled.div`
-  width: calc(100% - 50px);
+  width: ${aviableWidth};
   height: 100%;
   background-color: grey;
   padding: 5% 10%;

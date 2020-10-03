@@ -7,11 +7,14 @@ import {
   AppTemplateChildrenContainer,
 } from './style';
 import NavBar from '../../wrappers/NavBar';
+import Header from '../../wrappers/Header';
 
 const AppTemplate = ({ children }) => {
   return (
     <AppTemplateMainContainer>
-      <AppTemplateHeaderContainer>header</AppTemplateHeaderContainer>
+      <AppTemplateHeaderContainer>
+        <Header />
+      </AppTemplateHeaderContainer>
       <AppTemplateContentContainer>
         <AppTemplateNavbarContainer>
           <NavBar />
