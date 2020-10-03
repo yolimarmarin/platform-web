@@ -16,7 +16,7 @@ const AppTemplateContentContainer = styled.div`
 const AppTemplateNavbarContainer = styled.div`
   width: 50px;
   height: 100%;
-  background-color: blue;
+  background-color: #3d83fe;
 `;
 const AppTemplateChildrenContainer = styled.div`
   width: calc(100% - 50px);
