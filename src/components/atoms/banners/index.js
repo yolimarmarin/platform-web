@@ -1,5 +1,5 @@
 import React from 'react';
-import { UserBannerMainContainer } from './style';
+import { UserBannerMainContainer, DashboardBannerMainContainer } from './style';
 import ARROW_DOWN_PNG from '../../../assets/arrow-down.png';
 
 const UserBanner = ({ name, photo }) => {
@@ -12,4 +12,14 @@ const UserBanner = ({ name, photo }) => {
   );
 };
 
-export { UserBanner };
+const DashboardBanner = ({ backgroundImage, bannerFigure, title, text }) => {
+  return (
+    <DashboardBannerMainContainer backgroundImage={backgroundImage}>
+        <img src={bannerFigure} alt={bannerFigure} className="banner-figure" />
+        <div className="banner-title">{title}</div>
+        <div className="banner-text">{text}</div>
+    </DashboardBannerMainContainer>
+  );
+};
+
+export { UserBanner, DashboardBanner };
