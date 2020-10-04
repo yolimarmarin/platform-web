@@ -23,8 +23,7 @@ const NavBarButton = ({ onClick, active, icon }) => {
   return (
     <PrimaryButtonMainContainer
       onClick={onClick}
-      padding="15px 5px"
-      margin="5px 0"
+      padding="17px 5px"  
       background={active ? '#2a5dfe' : null}
     >
       <img className="navbar-icon" alt={icon} src={icon} />

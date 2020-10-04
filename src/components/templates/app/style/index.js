@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const headerHeight = '80px';
 const aviableHeight = `calc(100% - ${headerHeight})`
-const navbarWidth = '50px';
+const navbarWidth = '55px';
 const aviableWidth = `calc(100% - ${navbarWidth})`
 
 const AppTemplateMainContainer = styled.div`
@@ -26,7 +26,7 @@ const AppTemplateNavbarContainer = styled.div`
 const AppTemplateChildrenContainer = styled.div`
   width: ${aviableWidth};
   height: 100%;
-  background-color: grey;
+  background-color: #f5f5fb;
   padding: 5% 10%;
   box-sizing: border-box;
 `;

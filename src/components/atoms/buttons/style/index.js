@@ -24,7 +24,7 @@ const PrimaryButtonMainContainer = styled.button`
   }
 
   .navbar-icon {
-    width: 25px;
+    width: 18px;
   }
 
   .notification-icon {
