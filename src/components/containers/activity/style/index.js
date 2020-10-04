@@ -6,4 +6,11 @@ const ActivityMainContainer = styled.div`
   flex-direction: column;
 `;
 
-export { ActivityMainContainer };
+const ActivityDropdownsContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+`;
+
+export { ActivityMainContainer, ActivityDropdownsContainer };

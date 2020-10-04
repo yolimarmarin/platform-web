@@ -4,7 +4,7 @@ const DashboardMainContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom:20px;
+  margin-bottom:30px;
 `;
 
 export { DashboardMainContainer };

@@ -1,13 +1,16 @@
 import React from 'react';
-import { ActivityMainContainer } from './style';
+import { ActivityMainContainer,ActivityDropdownsContainer } from './style';
 import SectionTitle from '../section-title';
+import {IconButton} from '../../atoms/buttons'
+import ARROW_RIGHT_SVG from '../../../assets/arrow-right.svg';
 
-const ActivityContainer = () => {
+const ActivityContainer = ({ buildActivities }) => {
   return (
     <ActivityMainContainer>
       <SectionTitle title="Activity" justifyContent="space-between" dash={true}>
-        <>Arrow</>
+        <IconButton icon={ARROW_RIGHT_SVG}/>
       </SectionTitle>
+      <ActivityDropdownsContainer>{buildActivities()}</ActivityDropdownsContainer>
     </ActivityMainContainer>
   );
 };

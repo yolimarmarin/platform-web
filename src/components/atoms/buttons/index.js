@@ -46,4 +46,19 @@ const NotificationButton = ({ onClick, icon, items }) => {
   );
 };
 
-export { NavBarButton, PrimaryButton, NotificationButton };
+const IconButton = ({ onClick, icon }) => {
+  return (
+    <PrimaryButtonMainContainer
+      onClick={onClick}
+      padding="8px 17px"
+      width="20px"
+      margin="0 0 0 10px"
+      background="#e5e5ee"
+      borderRadius="5px"
+    >
+      <img className="icon-button-icon" alt={icon} src={icon} />
+    </PrimaryButtonMainContainer>
+  );
+};
+
+export { NavBarButton, PrimaryButton, NotificationButton, IconButton };

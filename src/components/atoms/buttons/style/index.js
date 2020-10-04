@@ -30,6 +30,11 @@ const PrimaryButtonMainContainer = styled.button`
   .notification-icon {
     width: 23px;
   }
+
+  .icon-button-icon{
+    width:15px;
+  }
+
 `;
 
 const CircularDiv = styled.div`

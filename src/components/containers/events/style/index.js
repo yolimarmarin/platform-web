@@ -4,7 +4,7 @@ const EventsMainContainer = styled.div`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom:20px;
+  margin-bottom:30px;
 `;
 
 const EventsSliderContainer = styled.div`
