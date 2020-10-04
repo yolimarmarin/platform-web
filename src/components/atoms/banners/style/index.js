@@ -20,7 +20,7 @@ const UserBannerMainContainer = styled.div`
 const DashboardBannerMainContainer = styled.div`
   width: 100%;
   position: relative;
-  height: 128px;
+  height: 150px;
   margin-top: 30px;
   background-image: url(${(props) => props.backgroundImage});
   background-repeat: no-repeat;
@@ -32,18 +32,18 @@ const DashboardBannerMainContainer = styled.div`
 
   .banner {
     &-figure {
-      width: 200px;
+      width: 220px;
       position: absolute;
       bottom: 0;
     }
 
     &-title {
-      margin: 0 0 20px 220px;
+      margin: 0 0 20px 250px;
       font-size: 25px;
     }
 
     &-text {
-      margin-left: 220px;
+      margin-left: 250px;
       font-size: 17px;
     }
   }

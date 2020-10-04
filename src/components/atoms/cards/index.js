@@ -1,5 +1,5 @@
 import React from 'react';
-import { LearningCardMainContainer } from './style';
+import { LearningCardMainContainer, EventCardMainContainer } from './style';
 
 const LearningCard = ({ title, icon, width, height }) => {
   return (
@@ -13,4 +13,16 @@ const LearningCard = ({ title, icon, width, height }) => {
   );
 };
 
-export { LearningCard };
+const EventCard = ({ icon, title, time }) => {
+  return (
+    <EventCardMainContainer width="100%">
+      <img src={icon} alt={icon} className="event-icon" />
+      <div className="event-info-container">
+        <div className="event-time">{time}</div>
+        <div className="event-title">{title}</div>
+      </div>
+    </EventCardMainContainer>
+  );
+};
+
+export { LearningCard, EventCard };

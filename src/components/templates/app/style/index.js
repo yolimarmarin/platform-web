@@ -27,7 +27,7 @@ const AppTemplateChildrenContainer = styled.div`
   width: ${aviableWidth};
   height: 100%;
   background-color: #f5f5fb;
-  padding: 2% 8%;
+  padding: 2% 5%;
   box-sizing: border-box;
 `;
 
