@@ -92,9 +92,8 @@ const SliderMainContainer = styled.div`
     }
 
     &-text{
-        font-size:25px;
+        font-size:40px;
         color:white;
-        font-weight:bold;
         width:50%;
     }
   }

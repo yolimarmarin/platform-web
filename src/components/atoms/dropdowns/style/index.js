@@ -10,6 +10,8 @@ const PrimaryDropdownMainContainer = styled.div`
   margin-bottom: 15px;
   border-radius: 8px;
   cursor: pointer;
+  font-family: Nunito;
+  box-shadow: 0 7px 5px 0 rgba(27,20,119,0.11);
 
   .dropdown-header {
     &-container {

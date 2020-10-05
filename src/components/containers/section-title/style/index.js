@@ -8,11 +8,10 @@ const SectionTitleMainContainer = styled.div`
 
   .section {
     &-title {
-    font-size: ${(props) => props.fontSize ? props.fontSize : '30px'};
-      font-weight: bold;
+      font-size: ${(props) => (props.fontSize ? props.fontSize : '30px')};
       margin-right: 15px;
       min-width: fit-content;
-      color: ${(props)=> props.color};
+      color: ${(props) => props.color};
     }
 
     &-dash {

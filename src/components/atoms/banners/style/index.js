@@ -61,7 +61,8 @@ const WarningBannerMainContainer = styled.div`
   align-items:center;
   box-sizing: border-box;
   padding: 20px 5px 20px 70px;
-  font-size: 15px;
+  font-size: 16px;
+  font-family: Nunito;
 
   .bold{
     font-weight:bold;

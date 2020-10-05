@@ -11,12 +11,13 @@ const LearningCardMainContainer = styled.div`
   min-width: ${(props) => (props.minWidth ? props.minWidth : 'fit-content')};
   border-radius: 8px;
   margin-left: 15px;
+  font-family: Gilroy-Bold;
+  box-shadow: 0 10px 20px 0 rgba(27,20,119,0.11);
 
   .learning {
     &-text {
       font-size: 12px;
       color: #9d9bb6;
-      font-weight: bold;
       margin-bottom: 5px;
     }
 
@@ -32,8 +33,9 @@ const LearningCardMainContainer = styled.div`
 
     &-title {
       margin-left: 5px;
-      font-size: 20px;
-      font-weight: bold;
+      font-size: 24px;
+      letter-spacing: 0;
+      font-family: 'Gilroy-Bold';
     }
   }
 `;
@@ -48,6 +50,7 @@ const EventCardMainContainer = styled.div`
   border-radius: 8px;
   margin: 10px 0;
   box-sizing: border-box;
+  font-family: Gilroy-Bold;
 
   .event {
     &-icon {
@@ -63,15 +66,15 @@ const EventCardMainContainer = styled.div`
 
     &-time {
       color: #9d9bb6;
-      font-size: 15px;
+      font-size: 16px;
       margin-bottom: 5px;
     }
 
     &-title {
-      font-weight: bold;
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
+      font-size: 18px;
     }
   }
 `;
@@ -84,21 +87,21 @@ const ProgressCardMainContainer = styled.div`
   box-sizing: border-box;
   background-color: ${(props) => (props.background ? props.background : 'white')};
   border-radius: 8px;
-  margin-bottom:15px;
-  align-items:center;
+  margin-bottom: 15px;
+  align-items: center;
 
   .progress {
     &-title {
       font-size: 16px;
       color: ${(props) => (props.background ? 'white' : '#9c9ab5')};
-      width:40%;
+      width: 40%;
       font-weight: bold;
     }
 
     &-amount {
       font-size: 40px;
-      width:40%;
-      text-align:right;
+      width: 40%;
+      text-align: right;
       color: ${(props) => (props.background ? 'white' : '#103460')};
     }
   }
@@ -142,4 +145,9 @@ const NotificationCardMainContainer = styled.div`
   }
 `;
 
-export { LearningCardMainContainer, EventCardMainContainer, ProgressCardMainContainer, NotificationCardMainContainer };
+export {
+  LearningCardMainContainer,
+  EventCardMainContainer,
+  ProgressCardMainContainer,
+  NotificationCardMainContainer,
+};
