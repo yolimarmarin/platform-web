@@ -16,6 +16,7 @@ const ProgressContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  align-self: flex-end;
 `;
 
 const ProgressCardsContainer = styled.div`

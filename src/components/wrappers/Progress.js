@@ -2,9 +2,12 @@ import React from 'react';
 import PropgressContainer from '../containers/progress';
 import { ProgressCard } from '../atoms/cards';
 import { WarningBanner } from '../atoms/banners';
+import ProgressBarContainer from '../containers/progress-bar';
 
 const Progress = () => {
-  const buildProgressOverview = () => <>Progress Overview</>;
+  const buildProgressOverview = () => (
+    <ProgressBarContainer hoursCompleted={20} hoursToGo={30} progress={40} />
+  );
 
   const buildProgressCards = () =>
     [
