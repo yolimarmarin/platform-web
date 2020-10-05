@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { PrimaryButtonMainContainer, CircularDiv } from './style';
+import PrimaryTooltip from '../../tooltip';
+import { NotificationCard } from '../cards';
 
 const PrimaryButton = ({ onClick, text, background }) => {
   return (
@@ -31,7 +33,23 @@ const NavBarButton = ({ onClick, active, icon }) => {
   );
 };
 
-const NotificationButton = ({ onClick, icon, items }) => {
+const NotificationButton = ({ icon, items }) => {
+  const [showTooltip, setShowTooltip] = useState(false);
+
+  const onClick = () => {
+    setShowTooltip(!showTooltip);
+  };
+
+  const keepOpen = (e) => {
+    e.stopPropagation();
+    setShowTooltip(true);
+  };
+
+  const closeTooltip = (e) => {
+    e.stopPropagation();
+    setShowTooltip(false);
+  };
+
   return (
     <PrimaryButtonMainContainer
       onClick={onClick}
@@ -42,6 +60,12 @@ const NotificationButton = ({ onClick, icon, items }) => {
     >
       <img className="notification-icon" alt={icon} src={icon} />
       {items.length !== 0 ? <CircularDiv background="#3d83fe" /> : null}
+      <PrimaryTooltip show={showTooltip} onClick={(e) => keepOpen(e)}>
+        {items.map((item, key) => (
+          <NotificationCard key={key} time={item.time} title={item.title} icon={item.icon} />
+        ))}
+      </PrimaryTooltip>
+      {showTooltip ? <div className="background-div" onClick={(e) => closeTooltip(e)} /> : null}
     </PrimaryButtonMainContainer>
   );
 };

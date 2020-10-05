@@ -35,6 +35,16 @@ const PrimaryButtonMainContainer = styled.button`
     width:15px;
   }
 
+  .background-div{
+    position:fixed;
+    z-index:1000;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+
+  }
+
 `;
 
 const CircularDiv = styled.div`

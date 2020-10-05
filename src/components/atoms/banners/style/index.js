@@ -8,6 +8,8 @@ const UserBannerMainContainer = styled.div`
   display: flex;
   align-items: center;
   min-width: ${(props) => (props.minWidth ? props.minWidth : 'fit-content')};
+  font-size: 16px;
+  font-family: Nunito;
 
   .user-banner {
     &-photo {

@@ -20,7 +20,7 @@ const ProgressContainer = styled.div`
 `;
 
 const ProgressCardsContainer = styled.div`
-  margin-top: 20px;
+  margin: 40px 0;
   width: 100%;
   display: grid;
   grid-template-columns: auto auto auto;

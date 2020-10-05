@@ -13,6 +13,10 @@ const PrimaryInputMainContainer = styled.input`
   width: ${(props) => props.width};
   height: 100%;
   padding:0;
+  font-family: Nunito;
+  font-size: 15px;
+  
+
 `;
 
 const SearchBarInputMainContainer = styled.div`

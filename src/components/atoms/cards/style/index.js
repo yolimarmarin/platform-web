@@ -104,4 +104,42 @@ const ProgressCardMainContainer = styled.div`
   }
 `;
 
-export { LearningCardMainContainer, EventCardMainContainer, ProgressCardMainContainer };
+const NotificationCardMainContainer = styled.div`
+  background-color: white;
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
+  padding: 17px 25px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  .notification {
+    &-icon {
+      width: 40px;
+      margin-right: 10px;
+    }
+
+    &-info-container {
+      display: flex;
+      flex-direction: column;
+      width: calc(100% - 60px);
+      align-items: flex-start;
+    }
+
+    &-time {
+      color: #9d9bb6;
+      margin-bottom: 5px;
+    }
+
+    &-title {
+      font-weight: bold;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 15px;
+    }
+  }
+`;
+
+export { LearningCardMainContainer, EventCardMainContainer, ProgressCardMainContainer, NotificationCardMainContainer };

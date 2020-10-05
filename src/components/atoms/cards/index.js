@@ -3,6 +3,7 @@ import {
   LearningCardMainContainer,
   EventCardMainContainer,
   ProgressCardMainContainer,
+  NotificationCardMainContainer,
 } from './style';
 
 const LearningCard = ({ title, icon, width, height }) => {
@@ -38,4 +39,16 @@ const ProgressCard = ({ title, amount, background }) => {
   );
 };
 
-export { LearningCard, EventCard, ProgressCard };
+const NotificationCard = ({ icon, title, time }) => {
+  return (
+    <NotificationCardMainContainer width="100%">
+      <img src={icon} alt={icon} className="notification-icon" />
+      <div className="notification-info-container">
+        <div className="notification-title">{title}</div>
+        <div className="notification-time">{time}</div>
+      </div>
+    </NotificationCardMainContainer>
+  );
+};
+
+export { LearningCard, EventCard, ProgressCard, NotificationCard };
