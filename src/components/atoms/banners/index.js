@@ -1,6 +1,11 @@
 import React from 'react';
-import { UserBannerMainContainer, DashboardBannerMainContainer } from './style';
+import {
+  UserBannerMainContainer,
+  DashboardBannerMainContainer,
+  WarningBannerMainContainer,
+} from './style';
 import ARROW_DOWN_PNG from '../../../assets/arrow-down.png';
+import WARNING_BG_PNG from '../../../assets/warning-bg.png';
 
 const UserBanner = ({ name, photo }) => {
   return (
@@ -15,11 +20,22 @@ const UserBanner = ({ name, photo }) => {
 const DashboardBanner = ({ backgroundImage, bannerFigure, title, text }) => {
   return (
     <DashboardBannerMainContainer backgroundImage={backgroundImage}>
-        <img src={bannerFigure} alt={bannerFigure} className="banner-figure" />
-        <div className="banner-title">{title}</div>
-        <div className="banner-text">{text}</div>
+      <img src={bannerFigure} alt={bannerFigure} className="banner-figure" />
+      <div className="banner-title">{title}</div>
+      <div className="banner-text">{text}</div>
     </DashboardBannerMainContainer>
   );
 };
 
-export { UserBanner, DashboardBanner };
+const WarningBanner = ({ title, text }) => {
+  return (
+    <WarningBannerMainContainer backgroundImage={WARNING_BG_PNG}>
+      <div>
+        <span className="bold">{title}</span>
+        {text}
+      </div>
+    </WarningBannerMainContainer>
+  );
+};
+
+export { UserBanner, DashboardBanner, WarningBanner };

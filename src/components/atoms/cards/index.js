@@ -1,5 +1,9 @@
 import React from 'react';
-import { LearningCardMainContainer, EventCardMainContainer } from './style';
+import {
+  LearningCardMainContainer,
+  EventCardMainContainer,
+  ProgressCardMainContainer,
+} from './style';
 
 const LearningCard = ({ title, icon, width, height }) => {
   return (
@@ -25,4 +29,13 @@ const EventCard = ({ icon, title, time }) => {
   );
 };
 
-export { LearningCard, EventCard };
+const ProgressCard = ({ title, amount, background }) => {
+  return (
+    <ProgressCardMainContainer background={background}>
+      <div className="progress-title">{title}</div>
+      <div className="progress-amount">{amount}</div>
+    </ProgressCardMainContainer>
+  );
+};
+
+export { LearningCard, EventCard, ProgressCard };

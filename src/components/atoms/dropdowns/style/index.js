@@ -9,6 +9,7 @@ const PrimaryDropdownMainContainer = styled.div`
   box-sizing: border-box;
   margin-bottom: 15px;
   border-radius: 8px;
+  cursor: pointer;
 
   .dropdown-header {
     &-container {

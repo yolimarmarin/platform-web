@@ -23,7 +23,7 @@ const NavBarButton = ({ onClick, active, icon }) => {
   return (
     <PrimaryButtonMainContainer
       onClick={onClick}
-      padding="17px 5px"  
+      padding="17px 5px"
       background={active ? '#2a5dfe' : null}
     >
       <img className="navbar-icon" alt={icon} src={icon} />
@@ -41,7 +41,7 @@ const NotificationButton = ({ onClick, icon, items }) => {
       position="relative"
     >
       <img className="notification-icon" alt={icon} src={icon} />
-      {items.length !== 0 ? <CircularDiv background='#3d83fe' /> : null}
+      {items.length !== 0 ? <CircularDiv background="#3d83fe" /> : null}
     </PrimaryButtonMainContainer>
   );
 };

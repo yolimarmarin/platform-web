@@ -28,7 +28,7 @@ const DashboardBannerMainContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color:white;
+  color: white;
 
   .banner {
     &-figure {
@@ -49,4 +49,21 @@ const DashboardBannerMainContainer = styled.div`
   }
 `;
 
-export { UserBannerMainContainer, DashboardBannerMainContainer };
+const WarningBannerMainContainer = styled.div`
+  background-image: url(${(props) => props.backgroundImage});
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  box-sizing: border-box;
+  padding: 20px 5px 20px 70px;
+  font-size: 15px;
+
+  .bold{
+    font-weight:bold;
+  }
+`;
+
+export { UserBannerMainContainer, DashboardBannerMainContainer, WarningBannerMainContainer };

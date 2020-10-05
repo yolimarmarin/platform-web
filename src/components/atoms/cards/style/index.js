@@ -76,4 +76,32 @@ const EventCardMainContainer = styled.div`
   }
 `;
 
-export { LearningCardMainContainer, EventCardMainContainer };
+const ProgressCardMainContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 13px;
+  box-sizing: border-box;
+  background-color: ${(props) => (props.background ? props.background : 'white')};
+  border-radius: 8px;
+  margin-bottom:15px;
+  align-items:center;
+
+  .progress {
+    &-title {
+      font-size: 16px;
+      color: ${(props) => (props.background ? 'white' : '#9c9ab5')};
+      width:40%;
+      font-weight: bold;
+    }
+
+    &-amount {
+      font-size: 40px;
+      width:40%;
+      text-align:right;
+      color: ${(props) => (props.background ? 'white' : '#103460')};
+    }
+  }
+`;
+
+export { LearningCardMainContainer, EventCardMainContainer, ProgressCardMainContainer };
