@@ -20,6 +20,14 @@ const SectionTitleMainContainer = styled.div`
       border-bottom: 2px solid #e8e8ee;
     }
   }
+
+  @media (max-width: 768px) {
+    .section {
+      &-title {
+        font-size: ${(props) => (props.fontSize ? props.fontSize : '25px')};
+      }
+    }
+  }
 `;
 
 export { SectionTitleMainContainer };

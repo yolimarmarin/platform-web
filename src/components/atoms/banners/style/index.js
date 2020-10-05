@@ -41,13 +41,43 @@ const DashboardBannerMainContainer = styled.div`
 
     &-title {
       margin: 0 0 20px 250px;
-      font-size: 25px;
+      font-size: 30px;
+      letter-spacing: -0.86px;
     }
 
     &-text {
       margin-left: 250px;
-      font-size: 17px;
+      font-size: 18px;
     }
+  }
+
+  @media (max-width: 768px) {
+    height: 300px;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    box-sizing:border-box;
+    background-image: none;
+    background-color: #1984ff;
+    border-radius: 10px;
+    margin-top: 70px;
+
+    .banner {
+    &-figure {
+      top: -80px;
+      left: calc(50% - 110px);
+    }
+
+    &-title {
+      margin:0;
+      text-align:center;
+    }
+
+    &-text {
+      margin:0;
+      text-align:center;
+      margin-top: 15px;
+    }
+  }
   }
 `;
 
@@ -66,6 +96,11 @@ const WarningBannerMainContainer = styled.div`
 
   .bold{
     font-weight:bold;
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px;
+    text-align:center;
   }
 `;
 

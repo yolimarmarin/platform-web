@@ -35,6 +35,12 @@ const SearchBarInputMainContainer = styled.div`
     width: 15px;
   }
   padding: 0 10px;
+
+  @media (max-width: 768px) {
+    min-width: fit-content;
+    width: 90%;
+    margin: 0 auto;
+  }
 `;
 
 export { PrimaryInputMainContainer, SearchBarInputMainContainer };

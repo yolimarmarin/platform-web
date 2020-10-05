@@ -12,7 +12,7 @@ export const SliderItem = ({ background, title, date, label }) => {
       <div className="label">{label}</div>
       <div className="slider-content-children">
         <div className="slider-content-text">{title}</div>
-        <div className="slider-content-text">{date}</div>
+        <div className="slider-content-text slider-content-date">{date}</div>
       </div>
     </div>
   );

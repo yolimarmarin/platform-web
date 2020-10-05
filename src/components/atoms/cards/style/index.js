@@ -12,7 +12,7 @@ const LearningCardMainContainer = styled.div`
   border-radius: 8px;
   margin-left: 15px;
   font-family: Gilroy-Bold;
-  box-shadow: 0 10px 20px 0 rgba(27,20,119,0.11);
+  box-shadow: 0 10px 20px 0 rgba(27, 20, 119, 0.11);
 
   .learning {
     &-text {
@@ -37,6 +37,11 @@ const LearningCardMainContainer = styled.div`
       letter-spacing: 0;
       font-family: 'Gilroy-Bold';
     }
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px 10px;
+    margin-left: 10px;
   }
 `;
 
@@ -75,6 +80,28 @@ const EventCardMainContainer = styled.div`
       white-space: nowrap;
       overflow: hidden;
       font-size: 18px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 50%;
+    margin-right: 15px;
+    flex-direction: column;
+    padding: 15px 10px;
+    align-items: baseline;
+
+    .event {
+      &-time {
+        margin-bottom: 0;
+      }
+
+      &-icon {
+        margin-bottom: 5px;
+      }
+
+      &-info-container {
+        width: 100%;
+      }
     }
   }
 `;

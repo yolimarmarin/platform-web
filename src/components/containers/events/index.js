@@ -1,5 +1,10 @@
 import React from 'react';
-import { EventsMainContainer, EventsSliderContainer, EventsTodayContainer } from './style';
+import {
+  EventsMainContainer,
+  EventsSliderContainer,
+  EventsTodayContainer,
+  EventsTodayCardsContainer,
+} from './style';
 import SectionTitle from '../section-title';
 import Slider from '../../slider';
 
@@ -12,7 +17,7 @@ const EventsContainer = ({ buildTodaysEvent, buildSlides }) => {
       </EventsSliderContainer>
       <EventsTodayContainer>
         <SectionTitle title="EVENTS TODAY" dash={true} fontSize="15px" color="#2f4d75" />
-        {buildTodaysEvent()}
+        <EventsTodayCardsContainer>{buildTodaysEvent()}</EventsTodayCardsContainer>
       </EventsTodayContainer>
     </EventsMainContainer>
   );

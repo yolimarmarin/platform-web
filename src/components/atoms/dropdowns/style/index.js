@@ -11,7 +11,7 @@ const PrimaryDropdownMainContainer = styled.div`
   border-radius: 8px;
   cursor: pointer;
   font-family: Nunito;
-  box-shadow: 0 7px 5px 0 rgba(27,20,119,0.11);
+  box-shadow: 0 7px 5px 0 rgba(27, 20, 119, 0.11);
 
   .dropdown-header {
     &-container {
@@ -35,10 +35,18 @@ const PrimaryDropdownMainContainer = styled.div`
     }
   }
 
-  .dropdown-content{
+  .dropdown-content {
     margin: 10px 20px 0 55px;
     font-size: 15px;
     text-align: justify;
+  }
+
+  @media (max-width: 768px) {
+    .dropdown-header {
+      &-display-icon {
+        display: none;
+      }
+    }
   }
 `;
 
