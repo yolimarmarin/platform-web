@@ -16,26 +16,39 @@ const HeaderMainContainer = styled.div`
     justify-content: center;
   }
 
-  .notifications-container{
+  .notifications-container {
     display: flex;
     justify-content: center;
   }
 
   @media (max-width: 768px) {
-    .notifications-container{
-      display:none;
+    .notifications-container {
+      display: none;
     }
 
-    .header-logo{
-      width:150px;
+    .header-logo {
+      width: 150px;
+    }
+
+    .mobile-menu-container {
+      width: 100vw;
+      height: 100vh;
+      z-index: 10000;
+      background-color: #2a5dfe;
+      top: 0;
+      left: 0;
+      position: fixed;
+      flex-direction: column;
+      justify-content: center;
+      display: ${(props)=> props.showMobileMenu ? 'flex' : 'none'}
     }
   }
 
   @media (max-width: 950px) {
-    .search-bar-container{
-      display:none;
+    .search-bar-container {
+      display: none;
     }
-    .notifications-container{
+    .notifications-container {
       width: -webkit-fill-available;
       justify-content: flex-end;
     }

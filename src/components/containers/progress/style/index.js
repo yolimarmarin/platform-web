@@ -35,7 +35,7 @@ const ProgressCardsContainer = styled.div`
   grid-template-columns: auto auto auto;
   column-gap: 15px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 950px) {
     grid-template-columns: auto auto;
   }
 `;
