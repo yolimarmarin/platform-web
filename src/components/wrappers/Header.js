@@ -31,7 +31,7 @@ const Header_ = () => {
       />
     ));
 
-  const buildUserBanner = () => <UserBanner name="Clarence Russell" photo={USER_PNG} />;
+  const buildUserBanner = () => <UserBanner name="Clarence Russell" photo={USER_PNG} circle={true} />;
 
   return <Header buildNotifications={buildNotifications} buildUserBanner={buildUserBanner} />;
 };

@@ -7,7 +7,7 @@ const SearchBarMainContainer = styled.div`
   box-sizing: border-box;
   margin-bottom: 15px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 951px) {
     display:none;
   }
 `;

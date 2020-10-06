@@ -11,7 +11,7 @@ const ActivityContainer = ({ buildActivities }) => {
   return (
     <ActivityMainContainer>
       <SectionTitle title="Activity" justifyContent="space-between" dash={true}>
-        { width >= '768px' ? <IconButton icon={ARROW_RIGHT_SVG}/> : null}
+        { width > '768px' ? <IconButton icon={ARROW_RIGHT_SVG}/> : null}
       </SectionTitle>
       <ActivityDropdownsContainer>{buildActivities()}</ActivityDropdownsContainer>
     </ActivityMainContainer>

@@ -36,7 +36,7 @@ const SearchBarInputMainContainer = styled.div`
   }
   padding: 0 10px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 950px) {
     min-width: fit-content;
     width: 90%;
     margin: 0 auto;
