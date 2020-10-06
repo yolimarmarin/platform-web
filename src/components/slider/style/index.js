@@ -90,6 +90,7 @@ const SliderMainContainer = styled.div`
       display: flex;
       justify-content: space-between;
       align-items: center;
+      height:100%;
     }
 
     &-text {
@@ -100,6 +101,7 @@ const SliderMainContainer = styled.div`
       display: flex;
       align-items: center;
       justify-content:center;
+      height: 100%;
     }
   }
 

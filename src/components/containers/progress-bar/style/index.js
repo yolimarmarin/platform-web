@@ -49,17 +49,16 @@ const ProgressBarMainContainer = styled.div`
 
 const ProgressInfoMainContainer = styled.div`
   width: ${(props) => props.width};
-  display: flex;
-  flex-direction: column;
   padding-right: ${(props) => (props.first ? '20px' : 0)};
   padding-left: ${(props) => (!props.first ? '20px' : 0)};
   border-right: ${(props) => (props.first ? '1px solid white' : 'none')};
-  height:60px;
+  min-height:60px;
 
   .info {
     &-description {
       &-container {
         display: flex;
+        height:15px;
       }
 
       &-circle {
@@ -78,6 +77,7 @@ const ProgressInfoMainContainer = styled.div`
     &-content {
       margin-top: 5px;
       font-size: 24px;
+      min-height:35px;
       .title {
         font-size: 45px;
       }
@@ -91,6 +91,13 @@ const ProgressInfoMainContainer = styled.div`
       &-content {
         margin-top: 10px;
         font-size: 17px;
+      }
+    }
+  }
+
+  @media (max-width: 1145px) {
+    .info {
+      &-content {
         .title {
           font-size: 33px;
         }

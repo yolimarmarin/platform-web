@@ -22,6 +22,10 @@ const HeaderMainContainer = styled.div`
     justify-content: center;
   }
 
+  .mobile-menu-container {
+      display: none;
+    }
+
   @media (max-width: 768px) {
     .notifications-container {
       display: none;

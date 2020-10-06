@@ -124,9 +124,10 @@ const ProgressCardMainContainer = styled.div`
       color: ${(props) => (props.background ? 'white' : '#9c9ab5')};
       width: 40%;
       font-weight: bold;
-      height: 100%;
+      height: 45px;
       display: flex;
       align-items: center;
+      align-self:center;
     }
 
     &-amount {
@@ -138,6 +139,7 @@ const ProgressCardMainContainer = styled.div`
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      height: 45px;
     }
   }
 `;

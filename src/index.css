@@ -39,6 +39,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #103460;
+  line-height: 1;
 }
 
 code {
