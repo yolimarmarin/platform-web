@@ -23,6 +23,7 @@ const ProgressBarMainContainer = styled.div`
     &-title {
       font-size: 30px;
       text-align: center;
+      margin-top: 15px;
     }
 
     &-content-container {
