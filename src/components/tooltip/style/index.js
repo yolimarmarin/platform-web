@@ -7,7 +7,7 @@ const TooltipMainContainer = styled.div`
     border-radius:5px;
     display:${(props)=> props.show ? 'flex' : 'none'};
     flex-direction: column;
-    top: 62px;
+    top: 75px;
     left: ${(props) => props.left};
     right: ${(props) => props.right};
     z-index:100000;

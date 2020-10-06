@@ -49,7 +49,7 @@ const CircularDiv = styled.div`
   bottom: 13px;
   right: 15px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: none;
   }
 `;
