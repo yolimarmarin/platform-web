@@ -35,7 +35,6 @@ const CircularProgressBar = ({ percentage }) => {
               style={{
                 fontSize: '40px',
                 color: 'white',
-                paddingBottom: '15px',
                 fontWeight: '500',
                 textAlign: 'center',
               }}

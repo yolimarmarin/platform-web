@@ -37,6 +37,7 @@ const SliderMainContainer = styled.div`
       color: white;
       padding: 5px 20px;
       border-radius: 20px;
+      height:20px;
     }
 
     .legend {
@@ -95,6 +96,10 @@ const SliderMainContainer = styled.div`
       font-size: 40px;
       color: white;
       width: 50%;
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content:center;
     }
   }
 
@@ -121,6 +126,8 @@ const SliderMainContainer = styled.div`
         font-size: 25px;
         width: 100%;
         text-align: start;
+        min-height: 50px;
+        justify-content: end;
       }
 
       &-date {

@@ -116,6 +116,7 @@ const ProgressCardMainContainer = styled.div`
   border-radius: 8px;
   margin-bottom: 15px;
   align-items: center;
+  min-height: 65px;
 
   .progress {
     &-title {

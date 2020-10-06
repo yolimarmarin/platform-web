@@ -26,11 +26,13 @@ const ProgressBarMainContainer = styled.div`
     }
 
     &-content-container {
+      height:100px;
       display: flex;
       background-color: rgba(198, 198, 205, 0.13);
       border-radius: 19px;
       padding: 20px;
       margin: 15px 0 30px 0;
+      box-sizing: border-box
     }
   }
 
