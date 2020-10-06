@@ -135,11 +135,11 @@ const ProgressCardMainContainer = styled.div`
       width: 40%;
       text-align: right;
       color: ${(props) => (props.background ? 'white' : '#103460')};
-      height: 100%;
-      display: flex;
-      align-items: center;
       justify-content: flex-end;
       height: 45px;
+      display: flex !important;
+      align-items: center !important;
+      align-self:center !important;
     }
   }
 `;

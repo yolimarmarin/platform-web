@@ -27,7 +27,8 @@ const ProgressBarMainContainer = styled.div`
     }
 
     &-content-container {
-      height:100px;
+      min-height: 100px;
+      height:fit-content;
       display: flex;
       background-color: rgba(198, 198, 205, 0.13);
       border-radius: 19px;
@@ -59,6 +60,7 @@ const ProgressInfoMainContainer = styled.div`
       &-container {
         display: flex;
         height:15px;
+        align-items: center;
       }
 
       &-circle {
@@ -75,7 +77,7 @@ const ProgressInfoMainContainer = styled.div`
     }
 
     &-content {
-      margin-top: 5px;
+      margin-top: 10px;
       font-size: 24px;
       min-height:35px;
       .title {
