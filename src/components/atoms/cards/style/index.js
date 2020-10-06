@@ -116,7 +116,7 @@ const ProgressCardMainContainer = styled.div`
   border-radius: 8px;
   margin-bottom: 15px;
   align-items: center;
-  min-height: 65px;
+  height: 65px;
 
   .progress {
     &-title {
@@ -124,6 +124,9 @@ const ProgressCardMainContainer = styled.div`
       color: ${(props) => (props.background ? 'white' : '#9c9ab5')};
       width: 40%;
       font-weight: bold;
+      height: 100%;
+      display: flex;
+      align-items: center;
     }
 
     &-amount {
@@ -131,6 +134,10 @@ const ProgressCardMainContainer = styled.div`
       width: 40%;
       text-align: right;
       color: ${(props) => (props.background ? 'white' : '#103460')};
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
     }
   }
 `;

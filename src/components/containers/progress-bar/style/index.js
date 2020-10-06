@@ -23,7 +23,7 @@ const ProgressBarMainContainer = styled.div`
     &-title {
       font-size: 30px;
       text-align: center;
-      margin-top: 15px;
+      margin-top: 30px;
     }
 
     &-content-container {
@@ -54,6 +54,7 @@ const ProgressInfoMainContainer = styled.div`
   padding-right: ${(props) => (props.first ? '20px' : 0)};
   padding-left: ${(props) => (!props.first ? '20px' : 0)};
   border-right: ${(props) => (props.first ? '1px solid white' : 'none')};
+  height:60px;
 
   .info {
     &-description {
