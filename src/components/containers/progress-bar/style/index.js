@@ -28,18 +28,17 @@ const ProgressBarMainContainer = styled.div`
 
     &-content-container {
       min-height: 100px;
-      height:fit-content;
+      height: fit-content;
       display: flex;
       background-color: rgba(198, 198, 205, 0.13);
       border-radius: 19px;
       padding: 20px;
       margin: 15px 0 30px 0;
-      box-sizing: border-box
+      box-sizing: border-box;
     }
   }
 
   @media (max-width: 768px) {
-
     .progress-bar {
       &-content-container {
         padding: 20px 10px;
@@ -53,13 +52,16 @@ const ProgressInfoMainContainer = styled.div`
   padding-right: ${(props) => (props.first ? '20px' : 0)};
   padding-left: ${(props) => (!props.first ? '20px' : 0)};
   border-right: ${(props) => (props.first ? '1px solid white' : 'none')};
-  min-height:60px;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   .info {
     &-description {
       &-container {
         display: flex;
-        height:15px;
+        height: 15px;
         align-items: center;
       }
 
@@ -77,9 +79,9 @@ const ProgressInfoMainContainer = styled.div`
     }
 
     &-content {
-      margin-top: 10px;
+      margin-top: 15px;
       font-size: 24px;
-      min-height:35px;
+      min-height: 35px;
       .title {
         font-size: 45px;
       }

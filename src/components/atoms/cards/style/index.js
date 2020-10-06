@@ -139,7 +139,7 @@ const ProgressCardMainContainer = styled.div`
       height: 45px;
       display: flex !important;
       align-items: center !important;
-      align-self:center !important;
+      align-self: baseline;
     }
   }
 `;
