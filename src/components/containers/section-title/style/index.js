@@ -17,6 +17,7 @@ const SectionTitleMainContainer = styled.div`
     &-dash {
       display: ${(props) => (props.dash ? 'block' : 'none')};
       width: -webkit-fill-available;
+      width: -moz-available;
       border-bottom: 2px solid #e8e8ee;
     }
   }

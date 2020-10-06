@@ -23,6 +23,7 @@ const PrimaryDropdownMainContainer = styled.div`
     &-title {
       color: #9d9bb6;
       width: -webkit-fill-available;
+      width: -moz-available;
     }
 
     &-icon {

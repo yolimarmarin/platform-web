@@ -12,6 +12,7 @@ const HeaderMainContainer = styled.div`
 
   .search-bar-container {
     width: -webkit-fill-available;
+    width: -moz-available;
     display: flex;
     justify-content: center;
   }
@@ -50,6 +51,7 @@ const HeaderMainContainer = styled.div`
     }
     .notifications-container {
       width: -webkit-fill-available;
+      width: -moz-available;
       justify-content: flex-end;
     }
   }
